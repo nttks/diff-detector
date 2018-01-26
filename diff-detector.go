@@ -71,7 +71,7 @@ func _main() (st int) {
 		fmt.Printf("%s", err)
 		return
 	}
-	tmpDir := os.TempDir();
+	tmpDir := "/edx/var/mackerel/diff-detector"
 
 	hasher := md5.New()
 	hasher.Write([]byte(opts.OptIdentifier))
